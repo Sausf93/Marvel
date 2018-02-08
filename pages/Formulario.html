@@ -1,0 +1,101 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/freelancer.css">
+    <title>Formulario</title>
+</head>
+
+<body onload="paginaDos()">
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" onclick="paginaprincipal()" href="#page-top">Página principal</a>
+            <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Graficos
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="estadisticas.html">Graficos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="contenedordos  col-xs-2 col-sm-2 col-sm-8" id="contenedordos">
+        <input class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModalCenter" value="Votar">
+    </div>
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Formulario</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <p id="p" tabindex="0">Todos los campos a rellenar son obligatorios</p>
+                <div class="modal-body">
+                    <form id="submit" action="estadisticas.html">
+                        <div class="form-group">
+                            <label for="Nombre">Nombre</label>
+                            <input type="text" id="inputnombre" class="form-control" maxlength="30" required pattern="[A-Za-z]*" id="Nombre" aria-describedby="Nombre"
+                                placeholder="Introducir nombre o usuario">
+                            <small id="Nombre" class="form-text text-muted">Introducir nombre de usuario para votar y participar en el sorteo</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="Correo">Correo Electronico</label>
+                            <input type="Email" required class="form-control" id="inputcorreo" aria-describedby="Correo" placeholder="Introducir Correo Electronico">
+                            <small id="Correo" class="form-text text-muted">Correo Electronico</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="Numero">Numero de telefono</label>
+                            <input type="number" id="inputnumero" class="form-control" maxlength="9" required pattern="[0-9]*" id="Numero" aria-describedby="Numero"
+                                placeholder="Introducir Numero de Telefono">
+                            <small id="Numero" class="form-text text-muted">Introducir numero de telefono</small>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Votar</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Direccion</h4>
+                    <p class="lead mb-0">Calle Jorge Manrriquez
+                        <br>Numero 4b, 38005</p>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="text-uppercase mb-4">Desarrollo de aplicaciones web</h4>
+                    <p class="lead mb-0">Trabajo de Dor</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/applicationdos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

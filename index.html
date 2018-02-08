@@ -1,0 +1,69 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/freelancer.css">
+    <title>Pagina de Marvel</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+        <div class="container">
+            <a tabindex="0" class="navbar-brand js-scroll-trigger" aria-label="En esta pagina se iran nombrando una serie de peliculas para votarlas, pulsa enter para seleccionar la que se desee votar."
+                href="index.html">Pagina Principal</a>
+            <button aria-label="Boton para acceder a la pagina de los gráficos" tabindex="0" class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded"
+                type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                Graficos
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="pages/estadisticas.html">Graficos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" onclick="prueba('https://gateway.marvel.com:443/v1/public/characters?limit=100&apikey=14321933d028297d6a0835b04732201f', 'heroes')" href="#">Heroes</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" onclick="prueba('https://gateway.marvel.com:443/v1/public/comics?limit=100&apikey=14321933d028297d6a0835b04732201f', 'comics')" href="#">Comics</a>
+        </li>
+    </ul>
+    <div id="contenedorHeroes"></div>
+    <div id="contenedorComics"></div>
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-5 mb-lg-0">
+                    <h4 tabindex="-1" class="text-uppercase mb-4">Direccion</h4>
+                    <p tabindex="0" class="lead mb-0">Calle Jorge Manrriquez
+                        <br>Numero 4b, 38005</p>
+                </div>
+                <div class="col-md-6">
+                    <h4 tabindex="-1" class="text-uppercase mb-4">Desarrollo de aplicaciones web</h4>
+                    <p tabindex="0" class="lead mb-0">Trabajo de Dew</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/application.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
