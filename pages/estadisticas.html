@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -36,26 +35,13 @@
         <h1>Graficos</h1>
     </div>
 
-    <div id="graficos" tabindex="0" aria-live="polite">
 
-    </div>
     <div class="botones">
-        <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" active onclick="donut()" title="boton para mostrar el grafico en forma de donut" class="btn btn-secondary">
-                <i>
-                    <img id="donut" src="../donut.png"> </i>
-            </button>
-            <button type="button" onclick="queso()"  title="boton para mostrar el grafico en forma de tartas o de queso" class="btn btn-secondary">
-                <i id="queso" class="fa fa-pie-chart"></i>
-            </button>
-            <button type="button" onclick="histograma()" title="boton para mostrar el grafico en forma de barras" class="btn btn-secondary">
-                <i class="material-icons">assessment</i>
-            </button>
-        </div>
-
-        <br>
-        <input class="btn btn-primary" onclick="volver()" id="volver" type="button" value="Volver a elegir pelicula">
+        <input class="btn btn-primary" onclick="Heroes()" id="volver" type="button" value="Mostrar Grafico de Heroes">
+        <input class="btn btn-primary" onclick="Comics()" id="volver" type="button" value="Mostrar Grafico de Comics">
     </div>
+
+    <div id="graficos"></div>
     <footer class="footer text-center">
         <div class="container">
             <div class="row">
@@ -71,9 +57,9 @@
             </div>
         </div>
     </footer>
-
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="../js/jquery.js"></script>
-    <script src="../js/application.js"></script>
+    <script src="../js/applicationdos.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
